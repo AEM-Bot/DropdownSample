@@ -40,6 +40,7 @@ const Mboxes: React.FC = () => {
         // Fetch mboxes from local backend API test
         const dataResponse = await fetch('https://apitest.victoriassecret.com/cmsmboxes/v1/mboxes', {
           method: 'GET',
+          mode:'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
