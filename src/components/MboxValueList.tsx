@@ -38,7 +38,7 @@ const Mboxes: React.FC = () => {
     const fetchMboxes = async () => {
       try {
         // Fetch mboxes from local backend API
-        const dataResponse = await fetch('http://interservice-ingress-general-vsco.commtest.eastus2.vsazure.com/cmsmboxes/v1/mboxes', {
+        const dataResponse = await fetch('https://apitest.victoriassecret.com/cmsmboxes/v1/mboxes', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const Mboxes: React.FC = () => {
         }
 
         const data = await dataResponse.json();
-        setMboxes(data.mboxes); 
+        setMboxes(data.mboxes);
 
       } catch (err: any) {
         setError(`Error: ${err.message}`);
