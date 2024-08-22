@@ -13,12 +13,12 @@ code {
 }
 
 
-.dog-breeds {
+.mboxes {
   margin: 20px;
   height: 100px;
 }
 
-#dogBreeds {
+#mboxes{
   height: 50px;
   text-align: center;
 }

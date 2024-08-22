@@ -1,10 +1,10 @@
 import React from 'react';
-import DogBreeds from './components/DogBreeds';
+import MboxValueList from './components/MboxValueList';
 
 function App() {
   return (
     <div className="App">
-      <DogBreeds /> {/* Use the DogBreeds component */}
+      <MboxValueList /> {/* Use the MboxValueList component */}
     </div>
   );
 }
